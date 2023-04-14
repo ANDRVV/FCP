@@ -19,7 +19,7 @@ while True:
 
 ## Receive message in channel 1:
 ```python
-import fcp
+import protofcp
 
 sock = protofcp.FCPSocket(protofcp.Channels.CHANNEL_01)
 msg = sock.recv()
