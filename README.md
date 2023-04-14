@@ -5,13 +5,13 @@ This protocol **has much the same function as radio frequencies**, unlimited cli
 
 ## How to install:
 
-`pip install fcp`
+`pip install protofcp`
 
 ## Send message in channel 1:
 ```python
-import fcp
+import protofcp
 
-sock = fcp.FCPSocket(fcp.Channels.CHANNEL_01)
+sock = protofcp.FCPSocket(protofcp.Channels.CHANNEL_01)
 while True:
     msg = input("> ")
     sock.send(msg.encode())
@@ -21,7 +21,7 @@ while True:
 ```python
 import fcp
 
-sock = fcp.FCPSocket(fcp.Channels.CHANNEL_01)
+sock = protofcp.FCPSocket(protofcp.Channels.CHANNEL_01)
 msg = sock.recv()
 print(msg)
 ```
