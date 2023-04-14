@@ -1,6 +1,6 @@
 # FCP
 **FCP** stands for **Fast Channel Protocol**, a protocol used to route on "**channels**" and send or receive data. 
-This protocol does not use a **buffer, which is specially designed for local network addresses for a camera/audio device connection.
+This protocol does not use a **buffer**, which is specially designed for local network addresses for a camera/audio device connection.
 This protocol **has much the same function as radio frequencies**, unlimited clients can send/receive information without physical addresses.
 
 ## How to install:
