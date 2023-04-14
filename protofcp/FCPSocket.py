@@ -13,7 +13,7 @@ class FCPSocket:
 
     def send(self, raw: bytes):
         packet = assemblr.buildPacket(self.ch, raw).assembly()
-        sendp(Ether(dst = "ff:ff:ff:ff:ff:ff")/(packet))
+        sendp(Ether(dst = "ff:ff:ff:ff:ff:ff")/(packet), verbose = 0)
 
     def recv(self):
         while True:
